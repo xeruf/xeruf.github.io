@@ -1,0 +1,37 @@
+body {
+    background-color: #FED;
+    font-size: 24px;
+	min-width: 200px;
+	margin: 0;
+}
+
+a {
+    color: #0000a0;
+    text-decoration: none;
+}
+
+.big {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#headline {
+    font-size: 32px;
+}
+
+#body {
+    margin: 40px 10px 10px;
+}
+
+#container {
+    width: 80%;
+    max-width: 1200px;
+}
+
+#content {
+    min-height: 500px;
+    margin: 10px auto;
+    padding: 10px;
+	background-color: #99CCFF;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,0.4);
+}
