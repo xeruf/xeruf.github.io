@@ -1,13 +1,26 @@
 body {
-    background-color: #FED;
+    background-color: hsl(240, 10%, 5%);
     font-size: 24px;
-	min-width: 200px;
-	margin: 0;
+    min-width: 200px;
+    margin: 0;
 }
 
 a {
-    color: #0000a0;
+    color: hsl(240, 100%, 30%);
     text-decoration: none;
+}
+
+div {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+div.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .big {
@@ -15,23 +28,18 @@ a {
     font-weight: bold;
 }
 
-#headline {
+div#headline {
     font-size: 32px;
 }
 
-#body {
+div#body {
     margin: 40px 10px 10px;
 }
 
-#container {
-    width: 80%;
-    max-width: 1200px;
-}
-
-#content {
+div.content {
     min-height: 500px;
     margin: 10px auto;
     padding: 10px;
-	background-color: #99CCFF;
-	box-shadow: 0 0 6px 0 rgba(0,0,0,0.4);
+    background-color: #99CCFF;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
 }
