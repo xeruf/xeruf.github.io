@@ -1,36 +1,45 @@
+div.head {
+    border-bottom: 2px solid var(--foreground);
+    color: var(--foreground);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+}
+
+div.head div {
+    display: flex;
+}
+
+.name {
+    padding: 0 16px;
+}
+
 nav.menu {
-    float: right;
 }
 
 ul.menu {
-    top: 0;
-    padding: 0;
-    margin: 0;
     list-style-type: none;
-    overflow: hidden;
 }
 
 ul.menu li {
-    float:left;
+    float: left;
 }
 
 ul.menu li a {
     display: inline-block;
-    color: #ccc;
+    color: var(--foreground);
     text-align: center;
-    width: 100px;
-    text-decoration: none;
+    width: 120px;
 }
 
 ul.menu li a:hover {
-    color: #fff;
+    color: var(--white);
 }
 
 @media screen and (max-width: 660px) {
-    ul {
-        border-bottom: 1px solid #bbb;
-    }
-
     li, li:last-child {
         float: none;
         text-align: center;
