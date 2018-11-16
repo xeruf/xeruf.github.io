@@ -21,6 +21,11 @@
 }
 
 @font-face {
+    font-family: "Continue AL";
+    src: url("fonts/CONTA.TTF");
+}
+
+@font-face {
     font-family: "096MKSD";
     src: url("fonts/096MKSD.TTF");
 }
@@ -50,6 +55,7 @@ div.container {
 }
 
 .banner {
+    position: relative;
     height: 500px;
     background: linear-gradient(to right, hsla(240, 10%, 5%, 1) 0%, transparent 20%, transparent 80%, hsla(240, 10%, 5%, 1) 100%),
     linear-gradient(to bottom, transparent 80%, hsla(240, 10%, 5%, 1) 100%),
@@ -58,15 +64,34 @@ div.container {
 }
 
 .se {
-    font-size: 50px;
-    margin: auto auto;
-    height: 500px;
-    line-height: 500px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    font-size:  60px;
+    /*font-size: 30px; font-family: "Continue AL";*/
+    height: 60px;
+    line-height: 60px;
     vertical-align: middle;
-    overflow: hidden;
-    animation: fadein 10s;
-    white-space: nowrap;
     opacity: .8;
+}
+
+.se-fade {
+    display: inline-block;
+    animation: fadein 2s;
+    animation-timing-function: cubic-bezier(.4,0,.6,1);
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: .8;
+    width:  390px;
+    /*width:  570px;*/
+    transition: ease 1s;
+}
+
+
+.se-fade:hover {
+    width:  420px;
+    /*width:  600px;*/
 }
 
 @keyframes fadein {
@@ -76,7 +101,8 @@ div.container {
     }
     to {
         opacity: .8;
-        width:  100%;
+        width:  390px;
+        /*width:  570px;*/
     }
 }
 
