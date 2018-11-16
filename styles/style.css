@@ -132,8 +132,6 @@ header .menu ul li {
 }
 .banner .se .se-fade {
   display: inline-block;
-  animation: fadein 2s;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
   vertical-align: middle;
   white-space: nowrap;
   overflow: hidden;
@@ -141,6 +139,10 @@ header .menu ul li {
   width: 390px;
   /*width:  570px;*/
   transition: ease 1s;
+}
+.banner .se .se-fade.animate-triggered {
+  animation: fadein 2s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
 }
 .banner .se .se-fade:hover {
   width: 420px;
