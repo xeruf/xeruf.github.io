@@ -1,20 +1,23 @@
-div.head {
-    border-bottom: 2px solid var(--foreground);
-    color: var(--foreground);
+header {
+    background-color: var(--background);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 24px;
+    font-family: "096MKSD";
+}
+
+header div {
     display: flex;
-    justify-content: space-between;
+}
+
+header .container {
     padding: 8px 16px;
     height: 30px;
     line-height: 30px;
-    font-size: 24px;
-}
-
-div.head div {
-    display: flex;
-}
-
-.name {
-    padding: 0 16px;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--foreground);
 }
 
 nav.menu {
@@ -26,17 +29,25 @@ ul.menu {
 
 ul.menu li {
     float: left;
-}
-
-ul.menu li a {
-    display: inline-block;
-    color: var(--foreground);
-    text-align: center;
     width: 120px;
 }
 
-ul.menu li a:hover {
+header a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    color: var(--foreground);
+}
+
+header a:hover {
     color: var(--white);
+    box-shadow: 0px 24px 0 -14px var(--orange);
+    /*border-bottom: 2px solid var(--orange);*/
+}
+
+a.name {
+    margin: 0 16px;
 }
 
 @media screen and (max-width: 660px) {
