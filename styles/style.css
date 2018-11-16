@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "071MKMA";
+  src: url("fonts/071MKMA.TTF");
+}
+@font-face {
+  font-family: "071MKMB";
+  src: url("fonts/071MKMB.TTF");
+}
+@font-face {
+  font-family: "Continue AL";
+  src: url("fonts/CONTA.TTF");
+}
+@font-face {
+  font-family: "096MKSD";
+  src: url("fonts/096MKSD.TTF");
+}
+@font-face {
+  font-family: "096MKSD";
+  src: url("fonts/096MKSD.TTF");
+}
+@font-face {
+  font-family: "232MKM";
+  src: url("fonts/232MKSD/232MKM.TTF");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  display: block;
+}
+
+:root {
+  --background: hsl(240, 10%, 5%);
+  --foreground: hsl(240, 100%, 90%);
+  --white: hsl(240, 100%, 100%);
+  --orange: hsl(16, 100%, 50%);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "071MKMB";
+  font-size: 24px;
+  min-width: 200px;
+  margin: 0;
+}
+
+div.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  background-color: var(--background);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 24px;
+  font-family: "096MKSD";
+}
+header div {
+  display: flex;
+}
+header a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  color: var(--foreground);
+}
+header a:hover {
+  color: var(--white);
+  box-shadow: 0px 24px 0 -14px var(--orange);
+  /*border-bottom: 2px solid var(--orange);*/
+}
+header a.name {
+  margin: 0 16px;
+}
+header .container {
+  padding: 8px 16px;
+  height: 30px;
+  line-height: 30px;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--foreground);
+}
+header .menu ul {
+  list-style-type: none;
+}
+header .menu ul li {
+  float: left;
+  width: 120px;
+}
+
+/* Fixes page header overlapping in-page anchors, see https://stackoverflow.com/a/28824157/6723250 */
+:target::before {
+  content: "";
+  display: block;
+  height: 48px;
+  margin-top: -48px;
+}
+
+.banner {
+  position: relative;
+  height: 600px;
+  max-height: 100%;
+  background: linear-gradient(to right, #0b0b0e 0%, transparent 20%, transparent 80%, #0b0b0e 100%), linear-gradient(to bottom, transparent 80%, #0b0b0e 100%), url("../images/banner.jpg") no-repeat center;
+  background-size: cover;
+}
+.banner .se {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 60px;
+  /*font-size: 30px; font-family: "Continue AL";*/
+  height: 60px;
+  line-height: 60px;
+  vertical-align: middle;
+  opacity: 0.8;
+}
+.banner .se .se-fade {
+  display: inline-block;
+  animation: fadein 2s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0.8;
+  width: 390px;
+  /*width:  570px;*/
+  transition: ease 1s;
+}
+.banner .se .se-fade:hover {
+  width: 420px;
+  /*width:  600px;*/
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 0.8;
+    width: 390px;
+    /*width:  570px;*/
+  }
+}
+
+div.content {
+  min-height: 2000px;
+  padding: 10px;
+  background-color: var(--background);
+}
+
+/*# sourceMappingURL=style.css.map */
