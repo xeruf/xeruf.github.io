@@ -1,8 +1,10 @@
 @import "fonts";
 @import "clean";
+@import "timeline";
 
 :root {
   --background: hsl(240, 10%, 5%);
+  --background-light: hsl(240, 10%, 25%);
   --foreground: hsl(240, 100%, 90%);
   --white: hsl(240, 100%, 100%);
   --orange: hsl(16, 100%, 50%);
