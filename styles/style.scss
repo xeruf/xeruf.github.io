@@ -11,7 +11,7 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: "071MKMB";
+  font-family: "071MKMB", sans-serif;
   font-size: 24px;
   min-width: 200px;
   margin: 0;
@@ -40,7 +40,7 @@ header {
   left: 0;
   right: 0;
   font-size: 24px;
-  font-family: "096MKSD";
+  font-family: "096MKSD", sans-serif;
 
   div {
     display: flex;
@@ -152,7 +152,7 @@ header {
 }
 
 div.content {
-  min-height: 2000px;
-  padding: 10px;
-  background-color: var(--background);
+  // background-color: var(--background);
+  position: relative;
+  margin-top: -100px;
 }
