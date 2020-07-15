@@ -109,21 +109,22 @@ header {
     left: 0;
     bottom: 0;
     right: 0;
+    // font-size: 30px; font-family: "Continue AL";
     font-size: 60px;
-    /*font-size: 30px; font-family: "Continue AL";*/
-    height: 60px;
-    line-height: 60px;
-    vertical-align: middle;
+    height: 2em;
     opacity: .9;
 
-    .se-fade {
+    span {
       display: inline-block;
-      vertical-align: middle;
-      white-space: nowrap;
       overflow: hidden;
+    }
+
+    .se-fade {
+      overflow: hidden;
+      white-space: nowrap;
       opacity: .8;
-      width: 390px;
-      /*width:  570px;*/
+      width: 6.4em;
+      min-width: max-content;
       transition: ease 1s;
 
       &.animate-triggered {
@@ -132,19 +133,20 @@ header {
       }
 
       &:hover {
-        width: 420px;
-        /*width:  600px;*/
+        opacity: .9;
+        width: 7em;
       }
 
       @keyframes fadein {
         from {
           opacity: 0;
           width: 0;
+          min-width: 0;
         }
         to {
           opacity: .8;
-          width: 390px;
-          /*width:  570px;*/
+          width: 6.4em;
+          min-width: 6.4em;
         }
       }
     }

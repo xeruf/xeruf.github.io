@@ -121,39 +121,42 @@ header .menu ul li {
   bottom: 0;
   right: 0;
   font-size: 60px;
-  /*font-size: 30px; font-family: "Continue AL";*/
-  height: 60px;
-  line-height: 60px;
-  vertical-align: middle;
+  height: 2em;
   opacity: 0.9;
 }
-.banner .se .se-fade {
+
+.banner .se span {
   display: inline-block;
-  vertical-align: middle;
-  white-space: nowrap;
   overflow: hidden;
+}
+
+.banner .se .se-fade {
+  overflow: hidden;
+  white-space: nowrap;
   opacity: 0.8;
-  width: 390px;
-  /*width:  570px;*/
+  width: 6.4em;
+  min-width: max-content;
   transition: ease 1s;
 }
+
 .banner .se .se-fade.animate-triggered {
   animation: fadein 2s;
   animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
 }
 .banner .se .se-fade:hover {
-  width: 420px;
-  /*width:  600px;*/
+  opacity: 0.9;
+  width: 7em;
 }
 @keyframes fadein {
   from {
     opacity: 0;
     width: 0;
+    min-width: 0;
   }
   to {
     opacity: 0.8;
-    width: 390px;
-    /*width:  570px;*/
+    width: 6.4em;
+    min-width: 6.4em;
   }
 }
 
