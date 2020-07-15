@@ -1,0 +1,37 @@
+[
+  {
+    "name": "MonsterUtilities",
+    "github": "xerus2000/monsterutilities",
+    "description": "A utility application to browse, stream and download Monstercat Songs, powered by the Monstercat API and MCatalog.",
+    "image": "",
+    "link": ""
+  },
+  {
+    "name": "MoodPlayer",
+    "github": "ngmp/moodplayer",
+    "description": "A music player that uses data science to find our your listening habits. That way it can introduce an intelligent shuffle only based on your data and cluster your music.",
+    "image": "",
+    "link": ""
+  },
+  {
+    "name": "Between The Lines",
+    "github": "BetweenTheLinesEV",
+    "description": "I was the main developer of the new App of the non-profit Between The Lines eV.",
+    "image": "",
+    "link": ""
+  },
+  {
+    "name": "",
+    "github": "",
+    "description": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "name": "",
+    "github": "",
+    "description": "",
+    "image": "",
+    "link": ""
+  }
+]
