@@ -73,6 +73,8 @@ header a {
   line-height: 30px;
   margin: 0 auto;
   color: var(--foreground);
+  box-shadow: 0px 24px 0 -14px var(--foreground);
+  transition: ease 0.5s;
 }
 header a:hover {
   color: var(--white);
