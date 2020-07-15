@@ -11,7 +11,8 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: "071MKMB", sans-serif;
+  font-family: /*"071MKMB",*/
+          sans-serif;
   font-size: 24px;
   min-width: 200px;
   margin: 0;
@@ -111,6 +112,7 @@ header {
     right: 0;
     // font-size: 30px; font-family: "Continue AL";
     font-size: 60px;
+    font-family: "071MKMB", sans-serif;
     height: 2em;
     opacity: .9;
 
