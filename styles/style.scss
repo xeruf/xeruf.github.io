@@ -3,9 +3,9 @@
 @import "timeline";
 
 :root {
-  --background: hsl(240, 10%, 5%);
+  --background: hsla(240, 10%, 5%);
   --background-light: hsl(240, 10%, 25%);
-  --foreground: hsl(240, 100%, 90%);
+  --foreground: hsl(240, 100%, 95%);
   --white: hsl(240, 100%, 100%);
   --orange: hsl(16, 100%, 50%);
 }
@@ -89,8 +89,8 @@ header {
   position: relative;
   height: 600px;
   max-height: 100%;
-  background: linear-gradient(to right, hsla(240, 10%, 5%, 1) 0%, transparent 20%, transparent 80%, hsla(240, 10%, 5%, 1) 100%),
-  linear-gradient(to bottom, transparent 80%, hsla(240, 10%, 5%, 1) 100%),
+  background: linear-gradient(to right, var(--background) 0%, transparent 20%, transparent 80%, var(--background) 100%),
+  linear-gradient(to bottom, transparent 80%, var(--background) 100%),
   url("../images/banner.jpg") no-repeat center;
   background-size: cover;
 
@@ -106,7 +106,7 @@ header {
     height: 60px;
     line-height: 60px;
     vertical-align: middle;
-    opacity: .8;
+    opacity: .9;
 
     .se-fade {
       display: inline-block;
