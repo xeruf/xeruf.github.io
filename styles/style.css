@@ -117,11 +117,9 @@ header .menu ul li {
 }
 .banner .se {
   margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  position: relative;
+  top: 45%;
+  width: max-content;
   font-size: 60px;
   font-family: "071MKMB", sans-serif;
   height: 2em;
