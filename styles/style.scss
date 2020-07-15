@@ -1,19 +1,22 @@
 @import "fonts";
 
 :root {
-  --background: hsla(240, 10%, 5%);
+  --background: hsl(240, 10%, 5%);
   --background-light: hsl(240, 10%, 25%);
-  --foreground: hsl(240, 100%, 95%);
-  --white: hsl(240, 100%, 100%);
-  --orange: hsl(16, 100%, 50%);
+  --foreground: hsla(240, 100%, 95%, .8); //hsla(50, 50%, 90%, .8);
+  --foreground-highlight: hsla(240, 100%, 100%, .9); //hsl(55, 100%, 100%);
+  --orange: hsl(20, 100%, 50%);
+  font-size: 24px;
+}
+
+* {
+  transition: ease .5s;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: /*"071MKMB",*/
-          sans-serif;
-  font-size: 24px;
+  font-family: sans-serif; // "071MKMB"
   min-width: 35em;
   margin: 0;
 }
@@ -30,6 +33,14 @@ p {
 
 .center {
   text-align: center;
+}
+
+a {
+  color: var(--foreground);
+
+  &:hover {
+    color: var(--foreground-highlight);
+  }
 }
 
 header {
@@ -52,12 +63,9 @@ header {
     line-height: 30px;
     margin: 0 auto;
     text-decoration: none;
-    color: var(--foreground);
     box-shadow: 0px 24px 0 -14px var(--foreground);
-    transition: ease .5s;
 
     &:hover {
-      color: var(--white);
       box-shadow: 0px 24px 0 -14px var(--orange);
       /*border-bottom: 2px solid var(--orange);*/
     }
@@ -114,8 +122,10 @@ header {
     // font-size: 30px; font-family: "Continue AL";
     font-size: 60px;
     font-family: "071MKMB", sans-serif;
-    height: 2em;
-    opacity: .9;
+
+    &:hover {
+      color: var(--foreground-highlight);
+    }
 
     span {
       display: inline-block;
@@ -125,10 +135,8 @@ header {
     .se-fade {
       overflow: hidden;
       white-space: nowrap;
-      opacity: .8;
       width: 6.4em;
       min-width: max-content;
-      transition: ease 1s;
 
       &.animate-triggered {
         animation: fadein 2s;
@@ -136,7 +144,6 @@ header {
       }
 
       &:hover {
-        opacity: .9;
         width: 7em;
       }
 
@@ -147,7 +154,7 @@ header {
           min-width: 0;
         }
         to {
-          opacity: .8;
+          opacity: 1;
           width: 6.4em;
           min-width: 6.4em;
         }
@@ -160,8 +167,4 @@ div.content {
   // background-color: var(--background);
   position: relative;
   margin-top: -100px;
-
-  a {
-    color: var(--foreground) !important;
-  }
 }
