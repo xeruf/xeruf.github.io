@@ -5,42 +5,48 @@
   --background-light: hsl(240, 10%, 25%);
   --foreground: hsla(240, 100%, 95%, .8); //hsla(50, 50%, 90%, .8);
   --foreground-highlight: hsla(240, 100%, 100%, .9); //hsl(55, 100%, 100%);
+  --foreground-transparent: hsla(240, 100%, 95%, 0);
   --orange: hsl(20, 100%, 50%);
   font-size: 24px;
+  font-family: sans-serif; // "071MKMB"
 }
 
 * {
   transition: ease .5s;
 }
 
+html {
+  background-color: var(--background) !important;
+}
+ 
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: sans-serif; // "071MKMB"
-  min-width: 35em;
   margin: 0;
+  min-width: 35em;
 }
 
 p {
   white-space: pre-line;
 }
 
-.container {
-  width: 80%;
-  max-width: 1000px;
-  margin: 0 auto;
+a {
+  color: var(--foreground);
+  &:hover {
+    color: var(--foreground-highlight);
+  }
 }
 
 .center {
   text-align: center;
 }
 
-a {
-  color: var(--foreground);
+// Element styles
 
-  &:hover {
-    color: var(--foreground-highlight);
-  }
+div.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 header {
@@ -63,7 +69,7 @@ header {
     line-height: 30px;
     margin: 0 auto;
     text-decoration: none;
-    box-shadow: 0px 24px 0 -14px var(--foreground);
+    box-shadow: 0px 24px 0 -14px var(--foreground-transparent);
 
     &:hover {
       box-shadow: 0px 24px 0 -14px var(--orange);
@@ -164,7 +170,7 @@ header {
 }
 
 div.content {
-  // background-color: var(--background);
   position: relative;
-  margin-top: -100px;
+  margin: -100px auto 100px;
+  width: 80%;
 }

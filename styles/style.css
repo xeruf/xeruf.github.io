@@ -27,34 +27,29 @@
   --background-light: hsl(240, 10%, 25%);
   --foreground: hsla(240, 100%, 95%, .8);
   --foreground-highlight: hsla(240, 100%, 100%, .9);
+  --foreground-transparent: hsla(240, 100%, 95%, 0);
   --orange: hsl(20, 100%, 50%);
   font-size: 24px;
+  font-family: sans-serif;
 }
 
 * {
   transition: ease 0.5s;
 }
 
+html {
+  background-color: var(--background) !important;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: sans-serif;
-  min-width: 35em;
   margin: 0;
+  min-width: 35em;
 }
 
 p {
   white-space: pre-line;
-}
-
-.container {
-  width: 80%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.center {
-  text-align: center;
 }
 
 a {
@@ -62,6 +57,16 @@ a {
 }
 a:hover {
   color: var(--foreground-highlight);
+}
+
+.center {
+  text-align: center;
+}
+
+div.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 header {
@@ -83,7 +88,7 @@ header a {
   line-height: 30px;
   margin: 0 auto;
   text-decoration: none;
-  box-shadow: 0px 24px 0 -14px var(--foreground);
+  box-shadow: 0px 24px 0 -14px var(--foreground-transparent);
 }
 header a:hover {
   box-shadow: 0px 24px 0 -14px var(--orange);
@@ -166,7 +171,8 @@ header .menu ul li {
 
 div.content {
   position: relative;
-  margin-top: -100px;
+  margin: -100px auto 100px;
+  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
